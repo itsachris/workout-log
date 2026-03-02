@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(echo \"PATH=$PATH\")",
+      "Bash(curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh)",
+      "Bash(bash)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git init)",
+      "Bash(gh auth status)",
+      "Bash(brew install gh)",
+      "Bash(curl -sL \"https://github.com/cli/cli/releases/download/v2.67.0/gh_2.67.0_macOS_arm64.tar.gz\" -o /tmp/gh.tar.gz)",
+      "Bash(tar -xzf /tmp/gh.tar.gz -C /tmp/)",
+      "Bash(curl -sI \"https://github.com/cli/cli/releases/latest\")",
+      "Bash(curl -sL \"https://github.com/cli/cli/releases/download/v2.87.3/gh_2.87.3_macOS_arm64.zip\" -o /tmp/gh.zip)",
+      "Bash(unzip -o /tmp/gh.zip -d /tmp/gh_cli)",
+      "Bash(export GH=/tmp/gh_cli/gh_2.87.3_macOS_arm64/bin/gh)",
+      "Bash($GH auth status)",
+      "Bash($GH auth login --web -p https)",
+      "Bash(git add -A)"
+    ]
+  }
+}
