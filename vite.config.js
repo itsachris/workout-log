@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/workout-log/',
   plugins: [
     react(),
     VitePWA({
@@ -12,7 +13,7 @@ export default defineConfig({
         name: 'Workout Log - Push/Pull/Legs',
         short_name: 'Workout Log',
         description: 'Track your Push/Pull/Legs workouts',
-        start_url: '/',
+        start_url: '/workout-log/',
         display: 'standalone',
         background_color: '#0a0a0f',
         theme_color: '#0a0a0f',
@@ -27,7 +28,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png}'],
-        navigateFallback: '/index.html'
+        navigateFallback: '/workout-log/index.html'
       }
     })
   ]
